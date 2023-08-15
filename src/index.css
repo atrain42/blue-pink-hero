@@ -5,6 +5,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
 
+:root {
+  --body_background: #FFFFFF;
+  --primary_color: #871C3F;
+  --body_color: #061E3E;
+}
+
+[data-theme="dark"] {
+  --body_background: #061E3E;
+  --body_color: #F4EAED;
+  --primary_color: #871C3F;
+}
+
+.App {
+  background-color: var(--body_background);
+  color: var(--body_color);
+  position: relative;
+}
+
+.primary-btn {
+  border: 2px solid var(--primary_color);
+  background-color: var(--primary_color);
+}
+
+.secondary-btn {
+  border: 2px solid var(--primary_color);
+  color: var(--body_color);
+}
+
+.header-color {
+  color: var(--primary_color);
+}
+
 p {
   font-size: 18px;
 }
@@ -20,18 +52,6 @@ h1 {
 
 .navbar {
   background-color: var(--body_background);
-}
-
-:root {
-  --body_background: #FFFFFF;
-  --primary_color: #871C3F;
-  --body_color: #061E3E;
-}
-
-[data-theme="dark"] {
-  --body_background: #061E3E;
-  --body_color: #F4EAED;
-  --primary_color: #871C3F;
 }
 
 /* Navigation items hover effect */
