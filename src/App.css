@@ -1,0 +1,19 @@
+.App {
+  background-color: var(--body_background);
+  color: var(--body_color);
+  position: relative;
+}
+
+.primary-btn {
+  border: 2px solid var(--primary_color);
+  background-color: var(--primary_color);
+}
+
+.secondary-btn {
+  border: 2px solid var(--primary_color);
+  color: var(--body_color);
+}
+
+.header-color {
+  color: var(--primary_color);
+}

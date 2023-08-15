@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+
+p {
+  font-size: 18px;
+}
+
+button {
+  font-size: 17px;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.navbar {
+  background-color: var(--body_background);
+}
+
+:root {
+  --body_background: #FFFFFF;
+  --primary_color: #871C3F;
+  --body_color: #061E3E;
+  --secondary_btn_border: #4A858B;
+  --secondary_btn_color: #400010;
+  --secondary_btn_text: #F2F2F2;
+}
+
+[data-theme="dark"] {
+  --body_background: #061E3E;
+  --body_color: #F4EAED;
+  --primary_color: #871C3F;
+  --secondary_color: #E8A0B2;
+  --secondary_btn_border: #98D0AE;
+  --secondary_btn_color: #212121;
+  --secondary_btn_text: #FFF3F6;
+}
+
+/* Navigation items hover effect */
+.hover-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--primary_color);
+  transition: width .3s;
+}
+
+.hover-link:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.material-symbols-outlined {
+  font-size: 35px;
+  color: var(--icon_color);
+}
