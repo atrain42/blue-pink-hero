@@ -9,7 +9,7 @@ export default function Navbar() {
           <li className='hover-link'>About</li>
           <li className='hover-link'>Writing</li>
           <li className='hover-link'>Projects</li>
-          <li className='py-1 px-3 bg-[#E8A0B2] rounded-md hover:rounded-[20px] ease-in duration-150'>
+          <li className='py-1 px-3 bg-[#E8A0B2] text-[#061E3E] rounded-md hover:rounded-[20px] ease-in duration-150'>
             Contact
           </li>
         </ul>
